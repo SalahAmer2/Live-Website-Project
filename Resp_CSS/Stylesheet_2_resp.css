@@ -1,0 +1,191 @@
+html{
+	background-color: #f3f3f3;
+}
+
+.header{
+	margin: auto;
+	max-width: 80%;
+}
+
+.everythingUnderHeader{
+	margin: auto;
+	/*max-width: 90%;*/
+	text-align: center;
+}
+
+body{
+	font-family: Titillium Web;
+}
+
+.biggerFont{
+	font-size: 2em;
+}
+
+.TFphoneNumber{
+	float: right;
+}
+
+.phoneNumber{
+	font-size: 2em;
+	color: orange;
+}
+
+.navBar{
+	background-color: #2E617E;
+	border-radius: 7px;
+}
+
+.navBar nav{
+	padding: 20px;
+}
+
+.navBar nav a{
+	margin-right: 10px;
+	/*****/
+	background: none;
+	color: white;
+	border-radius: 7px;
+	padding: 20px 20px;
+	/*****/
+}
+
+.toggle
+{
+	width: 100%;
+	padding: 0px 20px;
+	background-color: #2E617E;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+@media all and (max-width: 768px) 
+{
+	.toggle
+	{
+		display: block;
+	}
+	
+	nav
+	{
+		/*width: 100%;*/
+		display: none;
+	}
+	
+	nav a
+	{
+		display: block;
+		text-align: center;
+	}
+	
+	.header
+	{
+		text-align: center;
+	}
+	
+	.phoneNumber
+	{
+		font-size: 1.5em;
+	}
+}
+
+.active
+{
+	display: block;
+}
+
+/*.navBar nav a button{
+	border-radius: 7px;
+	border-color: #2E617E;
+	color: white; 
+	padding: 20px 20px;
+	background: #2E617E;
+	box-shadow: 1px 0px 1px 1px #000000;
+}*/
+
+nav a:hover{
+	color: yellow; /* nav a is closer than general a so hover color worked*/
+}
+
+a {
+	text-decoration: none; /*to remove underline from links */
+}
+
+.first{
+	background-color: #38718F;
+}
+
+.partofFirst{
+	margin: auto;
+	max-width: 900px;
+	/*width: 100%;*/
+}
+
+.beActive{
+	font-size: 3.5em;
+	color: white;
+}
+
+.coffee{
+	font-size: 1.7em;
+	color: #FAC20D;
+}
+
+.second{
+	margin: auto;
+	max-width: 900px;
+	font-size: 85%;
+}
+
+.second ul li{
+	color: #38718F;
+}
+
+.contentBtn{
+	border-radius: 7px;
+	border: none;
+	color: white; 
+	padding: 5px 20px;
+	background: #2E617E;
+	box-shadow: 1px 0px 1px 1px #000000;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.contentBtn:hover{
+	color: yellow;
+	background: darkblue;
+}
+
+.halfOne{
+	max-width: 210px;
+	margin-right: 150px; /* The order of these properties inside .halfOne, for example, don't matter*/
+	float: left;
+}
+
+.halfTwo{
+	max-width: 540px;
+	float: right;
+}
+
+.flowerInline{
+	margin-right: 25px;
+}
+
+.moreBtn{
+	float: right;
+}
+
+.quarter1Two{
+	max-width: 215px;
+	float: left;
+	margin-right: 55px;
+}
+
+.quarter2Two{
+	max-width: 215px;
+	float: right;
+	margin-left: 55px;
+}
