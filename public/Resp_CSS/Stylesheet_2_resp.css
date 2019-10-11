@@ -61,30 +61,30 @@ body{
 	display: none;
 }
 
-@media all and (max-width: 768px) 
+@media all and (max-width: 768px)
 {
 	.toggle
 	{
 		display: block;
 	}
-	
+
 	nav
 	{
 		/*width: 100%;*/
 		display: none;
 	}
-	
+
 	nav a
 	{
 		display: block;
 		text-align: center;
 	}
-	
+
 	.header
 	{
 		text-align: center;
 	}
-	
+
 	.phoneNumber
 	{
 		font-size: 1.5em;
@@ -99,7 +99,7 @@ body{
 /*.navBar nav a button{
 	border-radius: 7px;
 	border-color: #2E617E;
-	color: white; 
+	color: white;
 	padding: 20px 20px;
 	background: #2E617E;
 	box-shadow: 1px 0px 1px 1px #000000;
@@ -146,7 +146,7 @@ a {
 .contentBtn{
 	border-radius: 7px;
 	border: none;
-	color: white; 
+	color: white;
 	padding: 5px 20px;
 	background: #2E617E;
 	box-shadow: 1px 0px 1px 1px #000000;
@@ -188,4 +188,9 @@ a {
 	max-width: 215px;
 	float: right;
 	margin-left: 55px;
+}
+
+.backgroundColor{
+	background-color: #38718F;
+	color: white;
 }
