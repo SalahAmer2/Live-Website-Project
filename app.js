@@ -41,8 +41,13 @@ app.get("/schedules", function(req, res){
   res.render("schedules", {schedulesContent: schedulesContent});
 });
 
+// app.get("/:postName", function(req, res){
+//   const requestedTitle = _.lowerCase(req.params.postName);
+//   res.render(""+requestedTitle+"", {});
+// });
+
 app.get("/:postName", function(req, res){
-  const requestedTitle = _.lowerCase(req.params.postName);
+  const requestedTitle = req.params.postName;
   res.render(""+requestedTitle+"", {});
 });
 
