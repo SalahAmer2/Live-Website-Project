@@ -46,15 +46,15 @@ app.get("/schedules", function(req, res){
 //   res.render(""+requestedTitle+"", {});
 // });
 
-// app.get("/posts/:postName", function(req, res){
-//   const requestedTitle = _.lowerCase(req.params.postName);
-//   res.render(""+requestedTitle+"", {});
-// });
-
-app.get("/:postName", function(req, res){
-  const requestedTitle = req.params.postName;
+app.get("/posts/:postName", function(req, res){
+  const requestedTitle = _.lowerCase(req.params.postName);
   res.render(""+requestedTitle+"", {});
 });
+
+// app.get("/:postName", function(req, res){
+//   const requestedTitle = req.params.postName;
+//   res.render(""+requestedTitle+"", {});
+// });
 
 // app.get("/posts/:postName", function(req, res){
 //   res.render("flowerPost", {});
