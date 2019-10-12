@@ -203,3 +203,7 @@ a {
 .postsBackgroundColor{
 	background-color: #d1d1cf;
 }
+
+#panel{
+	display: none;
+}
