@@ -41,36 +41,10 @@ app.get("/schedules", function(req, res){
   res.render("schedules", {schedulesContent: schedulesContent});
 });
 
-// app.get("/:postName", function(req, res){
-//   const requestedTitle = _.lowerCase(req.params.postName);
-//   res.render(""+requestedTitle+"", {});
-// });
-
-// app.get("/posts/:postName", function(req, res){
-//   const requestedTitle = _.lowerCase(req.params.postName);
-//   res.render(""+requestedTitle+"", {});
-// });
-
 app.get("/posts/:postName", function(req, res){
   const requestedTitle = req.params.postName;
   res.render(""+requestedTitle+"", {});
 });
-
-// app.get("/posts/:postName", function(req, res){
-//   res.render("flowerPost", {});
-// });
-
-//   posts.forEach(function(post){
-//     const storedTitle = _.lowerCase(post.title);
-//
-//     if(requestedTitle === storedTitle){
-//       //console.log("Match Found!");
-//       res.render("post", {title: post.title, content: post.content});
-//     }else{
-//       //console.log("Not a match");
-//     }
-//   });
-// });
 
 let port = process.env.PORT;
 if (port == null || port == "") {
@@ -81,4 +55,4 @@ app.listen(port, function() {
   console.log("Server has started successfully.");
 });
 
-//if not working check naming it index.js here and in package.json
+//I named it index.js at first then changed it to app.js
