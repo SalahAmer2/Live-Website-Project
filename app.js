@@ -41,6 +41,22 @@ app.get("/schedules", function(req, res){
   res.render("schedules", {schedulesContent: schedulesContent});
 });
 
+app.get("/posts/:postName", function(req, res){
+  const requestedTitle = _.lowerCase(req.params.postName);
+  res.render(""+requestedTitle+"", {});
+});
+//   posts.forEach(function(post){
+//     const storedTitle = _.lowerCase(post.title);
+//
+//     if(requestedTitle === storedTitle){
+//       //console.log("Match Found!");
+//       res.render("post", {title: post.title, content: post.content});
+//     }else{
+//       //console.log("Not a match");
+//     }
+//   });
+// });
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;

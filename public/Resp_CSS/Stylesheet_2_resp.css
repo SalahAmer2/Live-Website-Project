@@ -195,7 +195,11 @@ a {
 	border-radius: 7px;
 }
 
-table.center{
+.center{
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.postsBackgroundColor{
+	background-color: #d1d1cf;
 }
