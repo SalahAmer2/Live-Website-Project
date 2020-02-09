@@ -208,3 +208,7 @@ a {
 	display: none;
 	color: white;
 }
+
+#flip:hover {
+	cursor: pointer;
+}

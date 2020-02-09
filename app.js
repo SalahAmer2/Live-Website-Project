@@ -38,7 +38,7 @@ app.get("/services", function(req, res){
 });
 
 app.get("/schedules", function(req, res){
-  res.render("schedules", {schedulesContent: schedulesContent});
+  res.render("schedules", {schedulesContent: schedulesContent});//We didn't use something similar to "/posts/:postName" here and make it just one app.get because these have the {schedulesContent: schedulesContent} thing so you're specifying a specific Content here you won't just say {requestedTitle+Content: requestedTitle+Content} that won't work
 });
 
 app.get("/posts/:postName", function(req, res){
